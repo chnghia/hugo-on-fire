@@ -9,8 +9,11 @@ if [ -z "${FIREBASE_TOKEN}" ]; then
     exit 1
 fi
 
+# install packages
+npm install
+
 # Generate hugo site
-hugo
+npm run start
 
 # Deploy it on Firebase
 firebase use --token "${FIREBASE_TOKEN}"
