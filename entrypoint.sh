@@ -11,7 +11,7 @@ fi
 
 # install packages
 npm install
-cd functions && npm install
+cd functions && npm install && cd ..
 
 # Generate hugo site
 npm run start
