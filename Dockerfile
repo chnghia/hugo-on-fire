@@ -1,4 +1,4 @@
-FROM node:lts
+FROM node:lts-alpine
 
 LABEL maintainer="Wajahat Karim (https://wajahatkarim.com)"
 
