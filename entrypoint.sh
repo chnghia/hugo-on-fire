@@ -17,7 +17,7 @@ cd functions && npm install && cd ..
 npm run start
 
 # Deploy it on Firebase
-firebase functions:config:set oauth.client_id=${OAUTH_CLIENT_ID} oauth.client_secret=${OAUTH_CLIENT_SECRET}
-firebase functions:config:get
+#firebase functions:config:set oauth.client_id=${OAUTH_CLIENT_ID} oauth.client_secret=${OAUTH_CLIENT_SECRET}
+#firebase functions:config:get
 firebase use --token "${FIREBASE_TOKEN}"
-firebase deploy --non-interactive --token "${FIREBASE_TOKEN}"
+firebase deploy --non-interactive --token "${FIREBASE_TOKEN}" --only hosting
